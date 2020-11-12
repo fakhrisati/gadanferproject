@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="UTF-8" />
+<meta name="description" content="" />
+<link type="text/css" rel="stylesheet"
+	href="/assets/css/bootstrap.min.css" />
+<link type="text/css" rel="stylesheet" href="/assets/css/mycss.css" />
+
+<title>Survey</title>
+</head>
+<body>
+<nav th:replace="fragment/header :: header"></nav>
+	<br>
+	<br>
+
+	<div class="container">
+
+		  <div class="row row" style="margin-top: 50px">
+                <div class="col-4 offset-2">
+               <div class="card">
+<div class="card-body text-center">
+<h4 class="card-title mb-4 mt-1">Yes</h4>
+          <hr class="my-2">
+
+<h5> <strong><span th:text="${yesCount}"></span> </strong> </h5>
+				
+			</div>
+			
+		</div>
+
+</div>
+
+
+   <div class="col-4">
+               <div class="card">
+<div class="card-body text-center">
+<h4 class="card-title mb-4 mt-1">No</h4>
+          <hr class="my-2">
+
+<h5>  <strong> <span th:text="${noCount}"></span></strong> </h5>
+				
+			</div>
+			
+		</div>
+
+</div>
+</div>
+	</div>
+
+	<script type="text/javascript" src="/assets/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+</body>
+</html>
